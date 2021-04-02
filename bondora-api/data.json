@@ -1,0 +1,29 @@
+{
+  "equipments": [
+    {
+      "ID": 1,
+      "Name": "Caterpillar bulldozer",
+      "TypeID": 1
+    },
+    {
+      "ID": 2,
+      "Name": "KamAZ truck",
+      "TypeID": 0
+    },
+    {
+      "ID": 3,
+      "Name": "Komatsu crane",
+      "TypeID": 1
+    },
+    {
+      "ID": 4,
+      "Name": "Volvo steamroller",
+      "TypeID": 0
+    },
+    {
+      "ID": 5,
+      "Name": "Bosch jackhammer",
+      "TypeID": 2
+    }
+  ]
+}
