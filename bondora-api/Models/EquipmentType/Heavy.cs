@@ -2,7 +2,7 @@
 {
     public class Heavy : AbstractEquipmentType
     {
-        public override byte LoyaltyPoints { get; } = 1;
+        public override byte LoyaltyPoints { get; } = 2;
 
         public override float CalculatePrice(int daysRented)
         {

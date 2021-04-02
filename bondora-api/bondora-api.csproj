@@ -164,8 +164,10 @@
     <Compile Include="Models\EquipmentType\AbstractEquipmentType.cs" />
     <Compile Include="Models\Equipment.cs" />
     <Compile Include="Models\EquipmentType\Heavy.cs" />
+    <Compile Include="Models\ItemInInvoice.cs" />
     <Compile Include="Models\EquipmentType\Regular.cs" />
     <Compile Include="Models\EquipmentType\Specialized.cs" />
+    <Compile Include="Models\Invoice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
