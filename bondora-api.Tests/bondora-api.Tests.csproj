@@ -98,6 +98,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\EquipmentType\Heavy.cs" />
+    <Compile Include="Models\EquipmentType\Regular.cs" />
+    <Compile Include="Models\EquipmentType\Specialized.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\ValuesControllerTest.cs" />
