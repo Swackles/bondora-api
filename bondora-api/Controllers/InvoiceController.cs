@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using bondora_api.Models;
 using System;
@@ -10,6 +10,9 @@ namespace bondora_api.Controllers
     {
         public Invoice Post([FromBody] Dictionary<int, int> body)
         {
+            if (body == null)
+                return null;
+
             return GenerateInvoice(body);
         }
 
@@ -17,6 +20,9 @@ namespace bondora_api.Controllers
         [Route("api/invoice/print")]
         public string Print([FromBody] Dictionary<int, int> body)
         {
+            if (body == null)
+                return null;
+
             Invoice invoice = GenerateInvoice(body);
 
             return invoice.Print();
