@@ -20,15 +20,16 @@ namespace bondora_api.Models
         public int ID { get; set; }
         public String Name { get; set; }
         public EquipmentTypes TypeID { get; set; }
-        
+
+        private static string JsonString = "{\"equipments\":[{\"ID\":1,\"Name\":\"Caterpillar bulldozer\",\"TypeID\":1},{\"ID\":2,\"Name\":\"KamAZ truck\",\"TypeID\":0},{\"ID\":3,\"Name\":\"Komatsu crane\",\"TypeID\":1},{\"ID\":4,\"Name\":\"Volvo steamroller\",\"TypeID\":0},{\"ID\":5,\"Name\":\"Bosch jackhammer\",\"TypeID\":2}]}";
+
         [JsonIgnore]
         public AbstractEquipmentType Type { get; set; }
 
         public static Equipment[] FindAll()
         {
-            string jsonString = File.ReadAllText("./data.json");
-
-            JObject json = JObject.Parse(jsonString);
+            //For some reason the .json file not included in build
+            JObject json = JObject.Parse(JsonString);
 
             JToken[] JEquipments = json["equipments"].Children().ToArray();
 
